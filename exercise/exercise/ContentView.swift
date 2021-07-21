@@ -10,8 +10,8 @@ import Charts
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("Pie Chart")
+        PieChart(entries: Wine.entriesForWines(Wine.allWines, category: .variety))
     }
 }
 
