@@ -11,6 +11,8 @@
 		967735A626A83474007C526D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967735A526A83474007C526D /* ContentView.swift */; };
 		967735A826A83478007C526D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967735A726A83478007C526D /* Assets.xcassets */; };
 		967735AB26A83478007C526D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967735AA26A83478007C526D /* Preview Assets.xcassets */; };
+		967735C026A835F7007C526D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967735B926A834AC007C526D /* Charts.framework */; };
+		967735C126A835F7007C526D /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 967735B926A834AC007C526D /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		967735C226A835F7007C526D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				967735C126A835F7007C526D /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		967735A026A83474007C526D /* exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967735A326A83474007C526D /* exerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseApp.swift; sourceTree = "<group>"; };
@@ -45,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967735C026A835F7007C526D /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +73,7 @@
 			children = (
 				967735A226A83474007C526D /* exercise */,
 				967735A126A83474007C526D /* Products */,
+				967735BF26A835F7007C526D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +115,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		967735BF26A835F7007C526D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +132,7 @@
 				9677359C26A83474007C526D /* Sources */,
 				9677359D26A83474007C526D /* Frameworks */,
 				9677359E26A83474007C526D /* Resources */,
+				967735C226A835F7007C526D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
