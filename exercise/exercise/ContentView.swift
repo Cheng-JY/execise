@@ -10,8 +10,15 @@ import Charts
 
 struct ContentView: View {
     var body: some View {
-        Text("Pie Chart")
-        PieChart(entries: Wine.entriesForWines(Wine.allWines, category: .variety))
+        VStack{
+            Text("Pie Chart")
+            Spacer()
+            PieChart(entries: Wine.entriesForWines(Wine.allWines, category: .variety))
+            Spacer()
+            TransactionBarChartView(entries: WineTransaction.dataEntriesForYear(2019, transactions: WineTransaction.allTransactions))
+            
+        }
+        
     }
 }
 
