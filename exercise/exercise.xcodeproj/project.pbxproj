@@ -13,6 +13,23 @@
 		967735AB26A83478007C526D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967735AA26A83478007C526D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		967735B826A834AC007C526D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 967735B326A834AC007C526D /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		967735BA26A834AC007C526D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 967735B326A834AC007C526D /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		967735A026A83474007C526D /* exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967735A326A83474007C526D /* exerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseApp.swift; sourceTree = "<group>"; };
@@ -20,6 +37,7 @@
 		967735A726A83478007C526D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967735AA26A83478007C526D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		967735AC26A83478007C526D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		967735B326A834AC007C526D /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,7 @@
 		967735A226A83474007C526D /* exercise */ = {
 			isa = PBXGroup;
 			children = (
+				967735B326A834AC007C526D /* Charts.xcodeproj */,
 				967735A326A83474007C526D /* exerciseApp.swift */,
 				967735A526A83474007C526D /* ContentView.swift */,
 				967735A726A83478007C526D /* Assets.xcassets */,
@@ -67,6 +86,15 @@
 				967735AA26A83478007C526D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		967735B426A834AC007C526D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				967735B926A834AC007C526D /* Charts.framework */,
+				967735BB26A834AC007C526D /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,12 +142,35 @@
 			mainGroup = 9677359726A83474007C526D;
 			productRefGroup = 967735A126A83474007C526D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 967735B426A834AC007C526D /* Products */;
+					ProjectRef = 967735B326A834AC007C526D /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9677359F26A83474007C526D /* exercise */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		967735B926A834AC007C526D /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 967735B826A834AC007C526D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		967735BB26A834AC007C526D /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 967735BA26A834AC007C526D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9677359E26A83474007C526D /* Resources */ = {
