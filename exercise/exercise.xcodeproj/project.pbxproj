@@ -15,11 +15,11 @@
 		967735EC26A84549007C526D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967735E626A8446B007C526D /* Charts.framework */; };
 		967735ED26A84549007C526D /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 967735E626A8446B007C526D /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		967735EF26A84613007C526D /* ChartsConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967735EE26A84613007C526D /* ChartsConnect.swift */; };
-		967735FC26A84B78007C526D /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967735F926A84B78007C526D /* PieChart.swift */; };
-		967735FE26A84B89007C526D /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967735FD26A84B89007C526D /* Wine.swift */; };
 		9677360D26A85C46007C526D /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677360C26A85C46007C526D /* DateView.swift */; };
 		9677361126A870C5007C526D /* WineTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677361026A870C5007C526D /* WineTransaction.swift */; };
 		9677361326A87124007C526D /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677361226A87124007C526D /* BarChartView.swift */; };
+		9677361F26A8995F007C526D /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677361E26A8995F007C526D /* PieChart.swift */; };
+		9677362526A899BA007C526D /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677362426A899BA007C526D /* Wine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +62,11 @@
 		967735AC26A83478007C526D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		967735E026A8446A007C526D /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		967735EE26A84613007C526D /* ChartsConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsConnect.swift; sourceTree = "<group>"; };
-		967735F926A84B78007C526D /* PieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PieChart.swift; path = ../../../PieChart/PieChart/PieChart.swift; sourceTree = "<group>"; };
-		967735FD26A84B89007C526D /* Wine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wine.swift; path = ../../../PieChart/PieChart/Wine.swift; sourceTree = "<group>"; };
 		9677360C26A85C46007C526D /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
 		9677361026A870C5007C526D /* WineTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineTransaction.swift; sourceTree = "<group>"; };
 		9677361226A87124007C526D /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		9677361E26A8995F007C526D /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		9677362426A899BA007C526D /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Wine.swift; path = ../Wine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,7 @@
 		967735A226A83474007C526D /* exercise */ = {
 			isa = PBXGroup;
 			children = (
-				967735FD26A84B89007C526D /* Wine.swift */,
-				967735F926A84B78007C526D /* PieChart.swift */,
+				9677362426A899BA007C526D /* Wine.swift */,
 				967735EE26A84613007C526D /* ChartsConnect.swift */,
 				967735E026A8446A007C526D /* Charts.xcodeproj */,
 				967735A326A83474007C526D /* exerciseApp.swift */,
@@ -114,6 +113,7 @@
 				9677361026A870C5007C526D /* WineTransaction.swift */,
 				967735A926A83478007C526D /* Preview Content */,
 				9677361226A87124007C526D /* BarChartView.swift */,
+				9677361E26A8995F007C526D /* PieChart.swift */,
 			);
 			path = exercise;
 			sourceTree = "<group>";
@@ -235,10 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9677361F26A8995F007C526D /* PieChart.swift in Sources */,
 				9677360D26A85C46007C526D /* DateView.swift in Sources */,
+				9677362526A899BA007C526D /* Wine.swift in Sources */,
 				967735A626A83474007C526D /* ContentView.swift in Sources */,
-				967735FE26A84B89007C526D /* Wine.swift in Sources */,
-				967735FC26A84B78007C526D /* PieChart.swift in Sources */,
 				967735EF26A84613007C526D /* ChartsConnect.swift in Sources */,
 				9677361126A870C5007C526D /* WineTransaction.swift in Sources */,
 				967735A426A83474007C526D /* exerciseApp.swift in Sources */,
