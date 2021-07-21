@@ -10,9 +10,10 @@ import Charts
 
 struct TransactionBarChartView: UIViewRepresentable {
     let entries: [BarChartDataEntry]
+    let barChart = BarChartView()
     
     func makeUIView(context: Context) -> BarChartView {
-        return BarChartView()
+        return barChart
     }
     
     func updateUIView(_ uiView: BarChartView, context: Context) {
@@ -26,6 +27,7 @@ struct TransactionBarChartView: UIViewRepresentable {
         formatLeftAxis(leftAxis: uiView.leftAxis)
         formatXAis(xAxis: uiView.xAxis)
         formatLegend(legend: uiView.legend)
+        uiView.notifyDataSetChanged()
     }
     
     func formatDataSet(dataSet: BarChartDataSet) {
@@ -59,6 +61,8 @@ struct TransactionBarChartView: UIViewRepresentable {
         legend.drawInside = true
         legend.yOffset = 30.0
     }
+    
+    
 
 }
 
